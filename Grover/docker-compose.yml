@@ -1,0 +1,8 @@
+version: '3'
+services:
+    grovers-service:
+        build: ./Grover
+        volumes:
+            - ./Grover:/usr/src/app
+        ports: 
+            - 5001:80

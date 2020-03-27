@@ -1,0 +1,50 @@
+// -relaxed-mathjax-everywhere
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(href="./styles/dracula.css", rel="stylesheet")
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.13/css/all.css', integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp', crossorigin='anonymous')
+        script(src="./highlight.pack.js")
+        script.
+            hljs.initHighlightingOnLoad();
+        script(src='./raphael.js')
+        script(src='./flowchart.js')
+        title Note
+
+.report-sidebar: p Thesis Proposal
+
+h5#title(style={'margin': '0 auto', 'text-align': 'center'}) Proposal
+// h5#names(style={'margin': '10px auto', 'text-align': 'center'}) Sammy Al Hashemi (1001548337)
+
+//- .summary.ui.piled.segment: span.
+
+//-   We tend to prefer mark-up languages (Markdown, LaTeX, etc.) to interfaced document editors like MS Office or Google Docs, because they make it easier to quickly write documents with consistent style. However, Markdown is limited to the title/sections/paragraphs structure, and LaTeX has obscure syntax and errors that also make it difficult to go off the beaten tracks.
+//-   This report introduces ReLaXed, a solution using Pug and SCSS for document definition and Google Chrome for rendering.
+
+p.proposal
+    include:markdown-it(html=true) Notes/Proposal.md
+
+
+
+template#page-footer
+  style(type='text/css').
+    .pdfheader {
+      font-size: 10px;
+      color: #aaa;
+      font-family: Helvetica;
+      font-weight: bold;
+      width: 1000px;
+      border-top: 1px solid #aaa;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 1mm;
+      margin-bottom: -1mm;
+      text-align: center;
+    }
+
+  .pdfheader Page #[span.pageNumber] / #[span.totalPages]
+
+style
+  include:scss report.scss
+

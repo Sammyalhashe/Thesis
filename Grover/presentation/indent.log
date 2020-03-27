@@ -1,0 +1,107 @@
+INFO: latexindent version 3.4.1, 2018-01-18, a script to indent .tex files
+      latexindent lives here: /usr/local/texlive/2018/texmf-dist/scripts/latexindent/
+      Tue Apr  9 15:32:56 2019
+      Filename: /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.tex
+INFO: Processing switches:
+      -w|--overwrite: Overwrite mode active, will make a back up of /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.tex first
+      -l|--localSettings: Read localSettings YAML file
+INFO: Directory for backup files and indent.log: /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat
+INFO: YAML settings read: defaultSettings.yaml
+      Reading defaultSettings.yaml from /usr/local/texlive/2018/texmf-dist/scripts/latexindent/defaultSettings.yaml
+INFO: YAML settings read: indentconfig.yaml or .indentconfig.yaml
+      Home directory is /Users/sammyalhashemi (didn't find either indentconfig.yaml or .indentconfig.yaml)
+      To specify user settings you would put indentconfig.yaml here: /Users/sammyalhashemi/indentconfig.yaml
+      Alternatively, you can use the hidden file .indentconfig.yaml as: /Users/sammyalhashemi/.indentconfig.yaml
+INFO: YAML settings read: -l switch
+WARN: yaml file not found: /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/localSettings.yaml not found. Proceeding without it.
+INFO: Backup procedure (-w flag active):
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak0 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak1 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak2 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak3 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak4 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak5 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak6 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak7 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak8 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak9 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak10 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak11 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak12 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak13 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak14 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak15 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak16 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak17 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak18 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak19 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak20 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak21 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak22 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak23 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak24 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak25 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak26 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak27 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak28 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak29 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak30 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak31 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak32 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak33 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak34 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak35 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak36 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak37 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak38 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak39 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak40 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak41 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak42 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak43 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak44 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak45 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak46 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak47 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak48 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak49 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak50 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak51 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak52 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak53 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak54 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak55 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak56 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak57 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak58 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak59 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak60 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak61 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak62 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak63 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak64 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak65 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak66 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak67 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak68 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak69 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak70 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak71 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak72 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak73 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak74 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak75 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak76 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak77 already exists, incrementing by 1... (see maxNumberOfBackUps and onlyOneBackUp)
+      copying /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.tex to /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak78
+      Backup file: /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.bak78
+      /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.tex will be overwritten after indentation
+INFO: Phase 1: searching for objects
+INFO: Phase 2: finding surrounding indentation
+INFO: Phase 3: indenting objects
+INFO: Phase 4: final indentation check
+INFO: Output routine:
+      Overwriting file /var/folders/s4/8xg0tgf92dq8vtnzb8c11h6r0000gn/T/neoformat/main.tex
+      --------------
+INFO: Please direct all communication/issues to:
+      https://github.com/cmhughes/latexindent.pl

@@ -1,0 +1,267 @@
+<html><body><!-- -relaxed-mathjax-everywhere--><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><link href="./styles/dracula.css" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"><script src="./highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script><script src="./raphael.js"></script><script src="./flowchart.js"></script><title>Note</title></head><body><div class="report-sidebar"><p>Thesis Proposal</p></div><h5 id="title" style="margin:0 auto;text-align:center;">Proposal</h5><!-- h5#names(style={'margin': '10px auto', 'text-align': 'center'}) Sammy Al Hashemi (1001548337)--><p class="proposal"></p><p>&nbsp;&nbsp;&nbsp;&nbsp;The idea of a quantum computers was first proposed by Richard Feynman back in 1982 as a possible solution to solve programs that could not be solved in polynomial time on a classical computer [1]. Development of large-scaled quantum computers have recently risen to the forefront in many tech giants such as Google, IBM, and Microsoft, and Alibaba [2]. Preliminary results on smaller-scale quantum processors with up to 20 qubits have demonstrated the capability of the hardware to be programmed and controlled and while the biggest challenge lies ahead in efforts to reduce the hardware limitations currently available, there is optimism. This is an incredible challenge going forward as it requires physical qubits well isolated from the environment and capable of being addressed and coupled to more than one extra qubit [3]. However, there has been massive progress recently, as the largest tech giants compete to build the first commercially available quantum computer [2]. For example, Google recently announced Bristlecone, their new 72-qubit quantum processor. Although Google is ‘cautiously optimistic’, this is very exciting as it has been proposed that quantum devices with more than ~50 qubits are expected to perform certain algorithms better than classical computers, thus achieving quantum supremacy [4][5].</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;The implications of the emergence of quantum computing are very great, particularly when considering the strength of modern data security for major companies, banks and blockchains [7].
+Two quantum algorithms that are of utmost importance in this context are Shor’s (prime factorization) and Grover’s (unstructured database query) algorithms [9][13].  Classical computers do not posses the power to overcome the computational effort required to break modern encryption methods, which in the case of, for example, RSA key encryption require the prime factorization of very large numbers and lattice-based encryption schemes often require solving a variant of the shortest vector problem (SVP). Although the emergence of Shor’s algorithm is of main concern in the most recent future due to it’s threat on the most popular encryption algorithms such as RSA encryption, Grover’s algorithm presents further threats to encryption algorithms proposed in response to Shor’s due to its ability to solve cryptographic hashing and ease the complexity in solving SVP and AES encryption [6][7][8].</p>
+<p>While Grover’s algorithm is a clearly defined problem as of this point, and early versions do exist, there is room to invest in its practicality and scalability as quantum computers continue to evolve past their current limitations. Grover’s algorithm assumes the existence of a “magical” black-box oracle function that identifies when any “winning” value exists when searching in a database, while the early implementations use quantum circuits with oracles precompiled for predefined values [9][10][11][12]. The objective of this research is to develop a practical oracle function for use in Grover’s algorithm in any scalable system. To do so, and initial step of extensive literature review and public consultation of forums specific to the quantum computing community is considered to test and validate what has been done. These tests will imply small-scale circuits being built for execution and testing on currently available simulation engines such as Rigetti Forest and IBM Quantum Experience. The hardware will be accessed through IBM Quantum Experience’s 16 qubit processor available for public use over the cloud using their python SDK. For each test attempted, the complexity and accuracy of each presented oracle will be judged. Once confident that a valid practical implementation of an oracle has been tested on, the remainder of the paper would deal with introducing parametrization and scalability of the algorithm for future implementations where hardware limitations are eliminated.</p>
+<p></p><template id="page-footer"><style type="text/css">.pdfheader {
+  font-size: 10px;
+  color: #aaa;
+  font-family: Helvetica;
+  font-weight: bold;
+  width: 1000px;
+  border-top: 1px solid #aaa;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1mm;
+  margin-bottom: -1mm;
+  text-align: center;
+}
+</style><div class="pdfheader">Page <span class="pageNumber"></span> / <span class="totalPages"></span></div></template><style>@import 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css';
+@import 'https://afeld.github.io/emoji-css/emoji.css';
+@import 'https://cdn.rawgit.com/isagalaev/highlight.js/cf4b46e5/src/styles/solarized-light.css';
+@font-face {
+  font-family: TimesNewRoman;
+  src: url(Fonts/Times\New\Roman.ttf); }
+
+@page {
+  margin: 1cm 1cm 2cm 0cm; }
+
+html {
+  padding-left: 1.27cm;
+  padding-right: 1.27cm;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 12pt !important; }
+
+.proposal {
+  font-family: 'Times New Roman', Times, serif; }
+
+body {
+  margin-left: 1cm; }
+
+#title {
+  font-weight: bold;
+  font-size: 2.5em; }
+
+.summary {
+  background-color: #e8ccdc; }
+
+h2 {
+  font-size: 1.8em; }
+
+p {
+  line-height: 1.5em;
+  font-size: 1em !important;
+  text-align: justify; }
+
+a {
+  text-decoration: underline;
+  color: inherit; }
+
+.report-sidebar {
+  position: fixed;
+  left: -0.25in;
+  top: 0;
+  width: 0.25in;
+  height: 943px;
+  writing-mode: vertical-rl;
+  border-top: 0.25in solid transparent;
+  border-left: 0.25in solid #c47ba4;
+  border-bottom: 0.25in solid transparent; }
+  .report-sidebar p {
+    text-align: center;
+    color: #e3c2d5;
+    margin-top: -1.55em; }
+
+.block-center {
+  display: block;
+  margin: 0 auto; }
+
+.mermaid-svg {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+  .mermaid-svg .node rect {
+    fill: none;
+    rx: 5px;
+    ry: 5px;
+    stroke: black; }
+  .mermaid-svg .edgelabel {
+    background: white;
+    color: #444; }
+
+.message,
+figure {
+  page-break-inside: avoid; }
+
+.message {
+  margin-bottom: 1em !important; }
+
+figure {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em; }
+  figure > .panel {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%; }
+    figure > .panel > .label {
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  figure.float-left {
+    margin-left: -1em !important;
+    margin-right: 2em !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left; }
+  figure figcaption {
+    font-size: 0.75em;
+    text-align: justify;
+    width: 100%;
+    margin-top: 1em; }
+    figure figcaption > .reference,
+    figure figcaption .title {
+      font-weight: bold;
+      display: inline;
+      margin-right: 0.5em; }
+    figure figcaption > .reference {
+      color: #090407; }
+      figure figcaption > .reference::after {
+        content: ': '; }
+    figure figcaption > .title {
+      color: #2c1422; }
+    figure figcaption > .caption {
+      display: inline; }
+
+.container {
+  margin: 0 auto; }
+
+.row {
+  display: flex; }
+
+.column {
+  float: left;
+  flex: 50%; }
+
+.graph {
+  height: 330px;
+  width: 330px; }
+
+.finaleq::after {
+  border-right: #b4588c solid 3px; }
+
+.width-1cm {
+  width: 10mm !important; }
+
+.width-2cm {
+  width: 20mm !important; }
+
+.width-3cm {
+  width: 30mm !important; }
+
+.width-4cm {
+  width: 40mm !important; }
+
+.width-5cm {
+  width: 50mm !important; }
+
+.width-6cm {
+  width: 60mm !important; }
+
+.width-7cm {
+  width: 70mm !important; }
+
+.width-8cm {
+  width: 80mm !important; }
+
+.width-9cm {
+  width: 90mm !important; }
+
+.width-10cm {
+  width: 100mm !important; }
+
+.width-11cm {
+  width: 110mm !important; }
+
+.width-12cm {
+  width: 120mm !important; }
+
+.width-13cm {
+  width: 130mm !important; }
+
+.width-14cm {
+  width: 140mm !important; }
+
+.width-15cm {
+  width: 150mm !important; }
+
+.width-16cm {
+  width: 160mm !important; }
+
+.width-17cm {
+  width: 170mm !important; }
+
+.width-18cm {
+  width: 180mm !important; }
+
+.width-19cm {
+  width: 190mm !important; }
+
+.top-1mm {
+  margin-top: 1mm; }
+
+.top-2mm {
+  margin-top: 2mm; }
+
+.top-3mm {
+  margin-top: 3mm; }
+
+.top-4mm {
+  margin-top: 4mm; }
+
+.top-5mm {
+  margin-top: 5mm; }
+
+.top-6mm {
+  margin-top: 6mm; }
+
+.top-7mm {
+  margin-top: 7mm; }
+
+.top-8mm {
+  margin-top: 8mm; }
+
+.top-9mm {
+  margin-top: 9mm; }
+
+.top-10mm {
+  margin-top: 10mm; }
+
+.top-11mm {
+  margin-top: 11mm; }
+
+.top-12mm {
+  margin-top: 12mm; }
+
+.top-13mm {
+  margin-top: 13mm; }
+
+.top-14mm {
+  margin-top: 14mm; }
+
+.top-15mm {
+  margin-top: 15mm; }
+
+.top-16mm {
+  margin-top: 16mm; }
+
+.top-17mm {
+  margin-top: 17mm; }
+
+.top-18mm {
+  margin-top: 18mm; }
+
+.top-19mm {
+  margin-top: 19mm; }
+</style></body></html></body></html>

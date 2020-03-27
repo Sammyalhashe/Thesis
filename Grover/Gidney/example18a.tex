@@ -1,0 +1,105 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdfborder={0 0 0},
+  breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-2}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\hypertarget{before-you-can-use-the-jobs-api-you-need-to-set-up-an-access-token.}{%
+\section{Before you can use the jobs API, you need to set up an access
+token.}\label{before-you-can-use-the-jobs-api-you-need-to-set-up-an-access-token.}}
+
+\hypertarget{log-in-to-the-ibm-q-experience.-under-account-generate-a-personal}{%
+\section{Log in to the IBM Q experience. Under ``Account'', generate a
+personal}\label{log-in-to-the-ibm-q-experience.-under-account-generate-a-personal}}
+
+\hypertarget{access-token.-replace-put_your_api_token_here-below-with-the-quoted}{%
+\section{access token. Replace `PUT\_YOUR\_API\_TOKEN\_HERE' below with
+the
+quoted}\label{access-token.-replace-put_your_api_token_here-below-with-the-quoted}}
+
+\hypertarget{token-string.-uncomment-the-apitoken-variable-and-you-will-be-ready-to-go.}{%
+\section{token string. Uncomment the APItoken variable, and you will be
+ready to
+go.}\label{token-string.-uncomment-the-apitoken-variable-and-you-will-be-ready-to-go.}}
+
+APItoken =
+`fa990f5e816bd5f800fc269a9b3f4fbe85c11f8969ea229ecc7a247c97f100ae5324c5fbedec09aa89db39db83e013b61cac3ed5ad10bded16e3080026f7b388'
+
+config = \{ `url': `https://quantumexperience.ng.bluemix.net/api',
+
+\begin{verbatim}
+# If you have access to IBM Q features, you also need to fill the "hub",
+# "group", and "project" details. Replace "None" on the lines below
+# with your details from Quantum Experience, quoting the strings, for
+# example: 'hub': 'my_hub'
+# You will also need to update the 'url' above, pointing it to your custom
+# URL for IBM Q.
+'hub': None,
+'group': None,
+'project': None
+\end{verbatim}
+
+\}
+
+if `APItoken' not in locals(): raise Exception(`Please set up your
+access token. See Qconfig.py.')
+
+\end{document}
